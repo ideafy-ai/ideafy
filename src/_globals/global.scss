@@ -122,6 +122,18 @@ $secondary-color: #2a73ff;
   width:90%;
   text-align: center;
 }
+.no-overflow{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 120px;
+}
+.no-overflow-bigger{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 120px;
+}
 .wrap {
   flex-wrap: wrap;
 }

@@ -18,20 +18,16 @@ function Landing() {
         <div className="content flex flex-start p-0 mt-10">
           <Link to={"./search"}>
             <Button
-              style={"primary"}
+              type="primary"
               text="Get started free"
               className="mr-10"
             ></Button>
           </Link>
-          <Button
-            style={"secondary"}
-            text="Read more"
-            className="ml-10"
-          ></Button>
+          <Button type="secondary" text="Read more" className="ml-10"></Button>
         </div>
       </div>
       <div className="content flex flex-6 image-container none-small">
-        <img src={blue} className="landing-image"></img>
+        <img src={blue} className="landing-image" alt="hand"></img>
       </div>
     </div>
   );
