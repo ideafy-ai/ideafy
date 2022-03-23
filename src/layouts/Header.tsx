@@ -1,6 +1,12 @@
+import { useNavigate } from "react-router-dom";
 import Button from "../components/Button";
 import "../_globals/global.scss";
 function Header() {
+  const navigate = useNavigate();
+  const clickHandler = () => {
+    console.log("hi");
+    navigate("/search");
+  };
   return (
     <div className="full-container head background-white">
       <div className="container">
@@ -14,13 +20,12 @@ function Header() {
             </a>
           </div>
           <div className="content flex flex-4 space-around none-xsmall">
-            <a href="./search">
-              <Button
-                type="primary"
-                text="Get started free"
-                className="mr-10"
-              ></Button>
-            </a>
+            <Button
+              type="primary"
+              text="Get started free"
+              className="mr-10"
+              click={clickHandler}
+            ></Button>
             <Button
               type="secondary"
               text="Read more"
