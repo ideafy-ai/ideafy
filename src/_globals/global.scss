@@ -18,7 +18,9 @@ $secondary-color: #2a73ff;
   justify-content: center;
   align-items: center;
 }
-
+.text-left {
+  text-align: left !important;
+}
 .header-1 {
   font-size: 1.6rem;
   font-weight: 800;
@@ -28,7 +30,7 @@ $secondary-color: #2a73ff;
   position: fixed;
   top: -10px;
   left: 0px;
-  z-index:1000;
+  z-index: 1000;
 }
 .link {
   font-size: 1.2rem;
@@ -47,8 +49,8 @@ $secondary-color: #2a73ff;
   justify-content: center;
   align-items: center;
 }
-.centered{
-    justify-content: center;
+.centered {
+  justify-content: center;
 }
 .space-between {
   justify-content: space-between;
@@ -120,16 +122,16 @@ $secondary-color: #2a73ff;
 .title {
   font-size: 2.8rem;
   font-weight: 600;
-  width:90%;
+  width: 90%;
   text-align: center;
 }
-.no-overflow{
+.no-overflow {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 120px;
 }
-.no-overflow-bigger{
+.no-overflow-bigger {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -245,13 +247,13 @@ $secondary-color: #2a73ff;
   width: 100%;
   margin-top: 50px;
 }
-.header-3{
-    font-size: 1.2rem;
+.header-3 {
+  font-size: 1.2rem;
 }
-.paragraph-small{
-    font-size: 1rem;
+.paragraph-small {
+  font-size: 1rem;
 }
-.paragraph-xsmall{
+.paragraph-xsmall {
   font-size: 0.8rem;
 }
 .card {
@@ -276,7 +278,7 @@ $secondary-color: #2a73ff;
     }
   }
 }
-.card:hover{
+.card:hover {
   cursor: pointer;
   box-shadow: 0 6px 20px #2a75ff52;
   transform: translateY(-10px);

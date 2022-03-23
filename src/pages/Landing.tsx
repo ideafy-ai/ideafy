@@ -6,7 +6,7 @@ function Landing() {
   return (
     <div className="container flex-12 flex h-100 wrap">
       <div className="content flex flex-6 column flex-start p-10">
-        <h1 className="title">
+        <h1 className="title text-left">
           Fetch Github Repositories through their names and their owners.
         </h1>
         <p className="paragraph">
