@@ -1,18 +1,34 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import RepositoryModel from "../moodels/Repository.model";
 import "../_globals/global.scss";
 function SearchBar(props: any) {
   const [search, setSearch] = useState("");
   const navigate = useNavigate();
-  const navigateToSearch = () => {
-    navigate("/search/" + search);
-    props.setLoading(true);
-  };
-  const handleKeyPress = (event: any) => {
-    if (event.key === "Enter") {
-      navigateToSearch();
+
+  const navigateToSearch = (event: any) => {
+    if (props.user === undefined) {
+      event.target.value = "";
+      navigate("/search/" + search);
+      props.setLoading(true);
+    } else {
+      props.setRepos(props.allRepos);
+      const repos: RepositoryModel[] = props.allRepos;
+      if (search !== "")
+        props.setRepos(
+          repos.filter((el: RepositoryModel) => {
+            return el.name.includes(search);
+          })
+        );
     }
   };
+
+  const handleKeyPress = (event: any) => {
+    if (event.key === "Enter") {
+      navigateToSearch(event);
+    }
+  };
+
   return (
     <div className="search big">
       <input

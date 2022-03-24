@@ -26,11 +26,26 @@ $secondary-color: #2a73ff;
   font-weight: 800;
   color: $primary-color;
 }
+@media (max-width: 500px) {
+  .header-1{
+    font-size: 1.8rem !important;
+  }
+  .title{
+    font-size: 2.1rem !important;
+  }
+  .paragraph{
+    font-size:1rem !important;
+  }
+  .search{
+    width:70% !important;
+  }
+}
 .head {
-  position: fixed;
+  position: absolute;
   top: -10px;
   left: 0px;
   z-index: 1000;
+  background-color: transparent !important;
 }
 .link {
   font-size: 1.2rem;
@@ -168,9 +183,19 @@ $secondary-color: #2a73ff;
 }
 .landing-image {
   position: absolute;
-  bottom: -300px;
+  top: 200px;
   left: -160px;
   animation: floating-hand 1s ease-in-out infinite alternate;
+}
+@media (max-height: 600px) {
+  .landing-image {
+    top: 50px;
+  }
+}
+@media (max-height: 800px) and (min-height: 601px) {
+  .landing-image {
+    top: 50px;
+  }
 }
 .h-auto {
   height: auto;
