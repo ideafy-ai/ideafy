@@ -27,17 +27,17 @@ $secondary-color: #2a73ff;
   color: $primary-color;
 }
 @media (max-width: 500px) {
-  .header-1{
+  .header-1 {
     font-size: 1.8rem !important;
   }
-  .title{
+  .title {
     font-size: 2.1rem !important;
   }
-  .paragraph{
-    font-size:1rem !important;
+  .paragraph {
+    font-size: 1rem !important;
   }
-  .search{
-    width:70% !important;
+  .search {
+    width: 70% !important;
   }
 }
 .head {
@@ -197,6 +197,17 @@ $secondary-color: #2a73ff;
     top: 50px;
   }
 }
+.rewind {
+  position: absolute;
+  top: -20px;
+  left: 0px;
+  padding: 30px;
+  font-size: 2rem;
+  height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .h-auto {
   height: auto;
   margin-top: 150px;
@@ -224,6 +235,9 @@ $secondary-color: #2a73ff;
 }
 .m-0 {
   margin: 0px;
+}
+.relative {
+  position: relative;
 }
 .search {
   position: relative;
@@ -281,7 +295,8 @@ $secondary-color: #2a73ff;
 .paragraph-xsmall {
   font-size: 0.8rem;
 }
-.card {
+.card,
+.modal {
   height: 230px;
   width: 90%;
   margin: 10px;
@@ -307,4 +322,70 @@ $secondary-color: #2a73ff;
   cursor: pointer;
   box-shadow: 0 6px 20px #2a75ff52;
   transform: translateY(-10px);
+}
+.modal-container {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 3000;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  background-color: #6f768034;
+  align-items: center;
+  justify-content: center;
+}
+.h-50 {
+  height: 50px;
+}
+.modal {
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 3px 10px #6f768033;
+  width: 100%;
+  max-width: 800px;
+  overflow: hidden;
+  max-height: 100vh;
+  min-height: 400px;
+  padding: 40px;
+  height: fit-content;
+  border-radius: 15px;
+  .exit {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: $primary-color-light;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+  }
+  .exit:hover {
+    transform: rotateZ(180deg);
+    color: $secondary-color;
+  }
+}
+.rewind {
+  *:hover {
+    color: $secondary-color;
+  }
+}
+.absolute {
+  position: absolute;
+}
+@media (max-width: 350px) {
+  .modal {
+    padding: 20px;
+  }
+}
+.grey {
+  color: $primary-color-light;
+}
+.golden {
+  color: #ffd27d;
+}
+.mw-100 {
+  min-width: 100px;
+}
+.mw-200 {
+  min-width: 200px;
 }

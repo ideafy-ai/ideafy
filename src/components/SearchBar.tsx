@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import RepositoryModel from "../moodels/Repository.model";
+import RepositoryModel from "../models/Repository.model";
 import "../_globals/global.scss";
 function SearchBar(props: any) {
   const [search, setSearch] = useState("");
@@ -17,7 +17,7 @@ function SearchBar(props: any) {
       if (search !== "")
         props.setRepos(
           repos.filter((el: RepositoryModel) => {
-            return el.name.includes(search);
+            return el.name.toLowerCase().includes(search.toLocaleLowerCase());
           })
         );
     }
