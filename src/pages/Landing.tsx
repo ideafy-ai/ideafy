@@ -6,24 +6,18 @@ function Landing() {
   return (
     <div className="container flex-12 flex h-100 wrap">
       <div className="content flex flex-6 column flex-start p-10">
-        <h1 className="title text-left">
-          Fetch Github Repositories through their names and their owners.
-        </h1>
+        <h1 className="title text-left">Fetch Github Repositories through their names and their owners.</h1>
         <p className="paragraph">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil, neque
-          ducimus eaque est doloremque veniam minus odit fugit quisquam laborum
-          voluptates animi! Accusantium incidunt architecto provident maxime
-          reiciendis impedit dolorum.
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil, neque ducimus eaque est doloremque veniam minus odit fugit
+          quisquam laborum voluptates animi! Accusantium incidunt architecto provident maxime reiciendis impedit dolorum.
         </p>
         <div className="content flex flex-start p-0 mt-10">
           <Link to={"./search"}>
-            <Button
-              type="primary"
-              text="Get started free"
-              className="mr-10"
-            ></Button>
+            <Button type="primary" text="Get started free" className="mr-10"></Button>
           </Link>
-          <Button type="secondary" text="Read more" className="ml-10"></Button>
+          <a href="https://github.com/Dopeamin/github-repositories-fetch/blob/master/README.md" target="_blank">
+            <Button type="secondary" text="Read more" className="ml-10"></Button>
+          </a>
         </div>
       </div>
       <div className="content flex flex-6 image-container none-small">

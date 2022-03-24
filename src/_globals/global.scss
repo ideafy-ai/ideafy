@@ -239,14 +239,18 @@ $secondary-color: #2a73ff;
 .relative {
   position: relative;
 }
+.w-80 {
+  width: 90% !important;
+}
 .search {
   position: relative;
   background-color: $light-grey;
-  width: 90%;
   box-shadow: #6f76803f 0 0 4px;
   border-radius: 10px;
   overflow: hidden;
   transition: all 0.5s ease;
+  margin-right:10px;
+  margin-left:10px;
   input {
     width: 100%;
     padding: 20px;
@@ -259,6 +263,7 @@ $secondary-color: #2a73ff;
     outline: none;
     background-color: white;
   }
+
   .next {
     position: absolute;
     right: 0px;
