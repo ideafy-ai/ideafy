@@ -15,7 +15,6 @@ function SearchBar(props: any) {
     } else {
       props.setRepos(props.allRepos);
       const repos: RepositoryModel[] = props.allRepos;
-      console.log(props.repos);
       if (search !== "") {
         props.setRepos(
           repos.filter((el: RepositoryModel) => {
@@ -30,7 +29,6 @@ function SearchBar(props: any) {
           toast.info("No data was found");
         }
       }
-      console.log(props.repos);
     }
   };
 
