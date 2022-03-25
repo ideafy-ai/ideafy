@@ -161,7 +161,11 @@ Project Link: [https://github.com/Dopeamin/github-repositories-fetch](https://gi
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+## Feedback
 
+The exercise was a great challenge as i had to think outside of the box when it comes to design and ux so the applications seems different than other alternatives . The hardest part was making sure it runs smoothly and responsively while keeping it easy to use.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [contributors-shield]: https://img.shields.io/github/contributors/Dopeamin/github-repositories-fetch.svg?style=for-the-badge
