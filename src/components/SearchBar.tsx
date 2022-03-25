@@ -1,12 +1,12 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import RepositoryModel from "../models/Repository.model";
 import "../_globals/global.scss";
 function SearchBar(props: any) {
   const [search, setSearch] = useState("");
   const navigate = useNavigate();
-
+  const params = useParams();
   const navigateToSearch = (event: any) => {
     if (props.user === undefined) {
       navigate("/search/" + search);
@@ -15,16 +15,20 @@ function SearchBar(props: any) {
     } else {
       props.setRepos(props.allRepos);
       const repos: RepositoryModel[] = props.allRepos;
-      console.log(props.repos);
-      if (!props.repos.length) toast.info("No data was found");
       if (search !== "") {
         props.setRepos(
           repos.filter((el: RepositoryModel) => {
             return el.name.toLowerCase().includes(search.toLocaleLowerCase());
           })
         );
+        if (
+          !repos.filter((el: RepositoryModel) => {
+            return el.name.toLowerCase().includes(search.toLocaleLowerCase());
+          }).length
+        ) {
+          toast.info("No data was found");
+        }
       }
-      console.log(props.repos);
     }
   };
 
