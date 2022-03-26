@@ -3,8 +3,10 @@ import Button from "../components/Button";
 import "../_globals/global.scss";
 function Header() {
   const navigate = useNavigate();
+  /**
+   * Navigate to search Route
+   */
   const clickHandler = () => {
-    console.log("hi");
     navigate("/search");
   };
   return (
@@ -22,9 +24,21 @@ function Header() {
             </a>
           </div>
           <div className="content flex flex-4 space-around none-xsmall">
-            <Button type="primary" text="Get started free" className="mr-10" click={clickHandler}></Button>
-            <a href="https://github.com/Dopeamin/github-repositories-fetch/blob/master/README.md" target="_blank">
-              <Button type="secondary" text="Read more" className="ml-10 none-small"></Button>
+            <Button
+              type="primary"
+              text="Get started free"
+              className="mr-10"
+              click={clickHandler}
+            ></Button>
+            <a
+              href="https://github.com/Dopeamin/github-repositories-fetch/blob/master/README.md"
+              target="_blank"
+            >
+              <Button
+                type="secondary"
+                text="Read more"
+                className="ml-10 none-small"
+              ></Button>
             </a>
           </div>
         </div>

@@ -242,6 +242,10 @@ $secondary-color: #2a73ff;
 .w-80 {
   width: 90% !important;
 }
+.btn{
+  width:fit-content;
+  font-family:"Inter"
+}
 .search {
   position: relative;
   background-color: $light-grey;

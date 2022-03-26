@@ -3,23 +3,43 @@ import RepositoryModel from "../models/Repository.model";
 import { useEffect } from "react";
 import Button from "./Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCodeBranch, faCodeFork, faEye, faStar, faTimes } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCodeFork,
+  faEye,
+  faStar,
+  faTimes,
+} from "@fortawesome/free-solid-svg-icons";
 function Modal(props: any) {
   const repo: RepositoryModel = props.repo;
   const date1: any = new Date(repo.updated_at);
   const date2: any = new Date();
   const diffTime = Math.abs(date2 - date1);
+  /**
+   * Calculate difference of time in days.
+   */
   const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
+  /**
+   * Detect if user clicked outside of modal and closes modal
+   * @param {any} event
+   */
   const mouseDownHandler = (event: any) => {
     if (event.target.id === "wrapper") exit();
   };
 
+  /**
+   * Closes modal
+   */
   const exit = () => {
     props.setVisible(false);
   };
   if (props.visible)
     return (
-      <div className="modal-container" id="wrapper" onMouseDown={mouseDownHandler}>
+      <div
+        className="modal-container"
+        id="wrapper"
+        onMouseDown={mouseDownHandler}
+      >
         <div className="modal">
           <FontAwesomeIcon icon={faTimes} className="exit" onClick={exit} />
           <div className="info flex flex-start mr-10">
@@ -32,7 +52,9 @@ function Modal(props: any) {
             </div>
           </div>
           <div className="content">
-            <p className="mt-10 paragraph">{repo.description ? repo.description : "No Description"}</p>
+            <p className="mt-10 paragraph">
+              {repo.description ? repo.description : "No Description"}
+            </p>
           </div>
           <div className="content flex">
             <a href={repo.html_url} target="_blank">
@@ -42,20 +64,31 @@ function Modal(props: any) {
           </div>
           <div className="icons flex wrap">
             <div className="flex space-evenly flex-4 mw-100">
-              <FontAwesomeIcon icon={faStar} className="golden"></FontAwesomeIcon> <p className="golden">{repo.stargazers_count} stars</p>
+              <FontAwesomeIcon
+                icon={faStar}
+                className="golden"
+              ></FontAwesomeIcon>{" "}
+              <p className="golden">{repo.stargazers_count} stars</p>
             </div>
 
             <div className="flex space-evenly flex-4 mw-100">
-              <FontAwesomeIcon icon={faCodeFork} className="grey"></FontAwesomeIcon> <p className="grey">{repo.forks_count} forks</p>
+              <FontAwesomeIcon
+                icon={faCodeFork}
+                className="grey"
+              ></FontAwesomeIcon>{" "}
+              <p className="grey">{repo.forks_count} forks</p>
             </div>
 
             <div className="flex space-evenly flex-4 mw-200">
-              <FontAwesomeIcon icon={faEye} className="grey"></FontAwesomeIcon> <p className="grey">{repo.watchers_count} watchers</p>
+              <FontAwesomeIcon icon={faEye} className="grey"></FontAwesomeIcon>{" "}
+              <p className="grey">{repo.watchers_count} watchers</p>
             </div>
             <div className="flex-6"></div>
           </div>
           <div className="content flex space-between wrap">
-            <p className="paragraph flext-6">{repo.language ? repo.language : "No Language"}</p>
+            <p className="paragraph flext-6">
+              {repo.language ? repo.language : "No Language"}
+            </p>
             <p className="paragraph flext-6">{diffDays} day(s) ago</p>
           </div>
         </div>

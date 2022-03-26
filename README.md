@@ -5,8 +5,6 @@
 [![Issues][issues-shield]](https://github.com/Dopeamin/github-repositories-fetch/issues)
 [![LinkedIn][linkedin-shield]](https://www.linkedin.com/in/aminehmd/)
 
-
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -27,8 +25,6 @@
     <a href="https://github.com/Dopeamin/github-repositories-fetch/issues">Request Feature</a>
   </p>
 </div>
-
-
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -52,9 +48,8 @@
   </ol>
 </details>
 
-
-
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
 [![Product Name Screen Shot][product-screenshot]](./screenshot.png)
@@ -62,25 +57,23 @@
 There are alot of alternatives to fetching data from github , however some seem to be outdated and lack a sense of creativity and minimalism which our solution is offering
 
 Here's why:
-* Simple and intuitive design
-* Smooth performance
-* Easy to use
+
+- Simple and intuitive design
+- Smooth performance
+- Easy to use
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 ### Built With
 
 This project is made using :
 
-* [React.js](https://reactjs.org/)
+- [React.js](https://reactjs.org/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-
 <!-- GETTING STARTED -->
+
 ## Getting Started
 
 So to get yourself started with the application here is what is needed
@@ -88,13 +81,13 @@ So to get yourself started with the application here is what is needed
 ### Prerequisites
 
 You will need to have the latest npm installed
-* npm
+
+- npm
   ```sh
   npm install npm@latest -g
   ```
 
 ### Installation
-
 
 1. Clone the repo
    ```sh
@@ -107,21 +100,48 @@ You will need to have the latest npm installed
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-
 <!-- USAGE EXAMPLES -->
+
 ## Usage
 
-Serve the project to a development server
+1. Create a .env file and type the following inside
    ```sh
-   npm run start
+   // contents of .env
+   REACT_APP_API_URL="https://api.github.com";
    ```
+
+2. Serve the project to a development server
+    ```sh
+    npm run start
+    ````
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
+<!-- Testing -->
+
+## Testing
+
+To run the test suite run this command
+  ```sh
+  npm run start
+  ````
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- Storybooks -->
+
+## Storybooks
+
+Start Storybooks
+  ```sh
+  npm run storybook
+  ````
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- ROADMAP -->
+
 ## Roadmap
 
 - [x] Add github user search
@@ -129,16 +149,15 @@ Serve the project to a development server
 - [ ] Add more filtering and sorting fonctionalities
 - [ ] Add "components" document to easily copy & paste sections of the readme
 - [ ] Multi-language Support
-    - [ ] French
-    - [ ] German
+  - [ ] French
+  - [ ] German
 
 See the [open issues](https://github.com/Dopeamin/github-repositories-fetch/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-
 <!-- CONTRIBUTING -->
+
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
@@ -155,6 +174,7 @@ Don't forget to give the project a star! Thanks again!
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- CONTACT -->
+
 ## Contact
 
 Project Link: [https://github.com/Dopeamin/github-repositories-fetch](https://github.com/Dopeamin/github-repositories-fetch)
@@ -168,6 +188,7 @@ The exercise was a great challenge as i had to think outside of the box when it 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
+
 [contributors-shield]: https://img.shields.io/github/contributors/Dopeamin/github-repositories-fetch.svg?style=for-the-badge
 [contributors-url]: https://github.com/Dopeamin/github-repositories-fetch/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/Dopeamin/github-repositories-fetch.svg?style=for-the-badge
