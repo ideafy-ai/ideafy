@@ -124,7 +124,7 @@ You will need to have the latest npm installed
 
 To run the test suite run this command
   ```sh
-  npm run start
+  npm run test
   ````
 
 <p align="right">(<a href="#top">back to top</a>)</p>
