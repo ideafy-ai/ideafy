@@ -1,9 +1,8 @@
 <div id="top"></div>
 
-[![Forks][forks-shield]](https://github.com/Dopeamin/github-repositories-fetch/network/members)
-[![Stargazers][stars-shield]](https://github.com/Dopeamin/github-repositories-fetch/stargazers)
-[![Issues][issues-shield]](https://github.com/Dopeamin/github-repositories-fetch/issues)
-[![LinkedIn][linkedin-shield]](https://www.linkedin.com/in/aminehmd/)
+[![Forks][forks-shield]](https://github.com/ideafy-ai/ideafy/network/members)
+[![Stargazers][stars-shield]](https://github.com/ideafy-ai/ideafy/stargazers)
+[![Issues][issues-shield]](https://github.com/ideafy-ai/ideafy/issues)
 
 <!-- PROJECT LOGO -->
 <br />
@@ -12,17 +11,15 @@
     <img src="public/favicon.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Github Repositories Fetch</h3>
+  <h3 align="center">iDEAFY</h3>
 
   <p align="center">
-    An awesome lightweight application that fetches the repositories of github users
+    An awesome lightweight application that fetches ideas for you
     <br />
     <br />
-    <a href="https://warm-nasturtium-d6aa58.netlify.app/">View Demo</a>
+    <a href="https://github.com/ideafy-ai/ideafy/issues">Report Bug</a>
     ·
-    <a href="https://github.com/Dopeamin/github-repositories-fetch/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/Dopeamin/github-repositories-fetch/issues">Request Feature</a>
+    <a href="https://github.com/ideafy-ai/ideafy/issues">Request Feature</a>
   </p>
 </div>
 
@@ -52,9 +49,7 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](./screenshot.png)
-
-There are alot of alternatives to fetching data from github , however some seem to be outdated and lack a sense of creativity and minimalism which our solution is offering
+There are alot of alternatives to fetching ideas , however some seem to be outdated and lack a sense of creativity and minimalism which our solution is offering
 
 Here's why:
 
@@ -69,6 +64,7 @@ Here's why:
 This project is made using :
 
 - [React.js](https://reactjs.org/)
+- [NEST.js](https://nestjs.com/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -91,7 +87,7 @@ You will need to have the latest npm installed
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/Dopeamin/github-repositories-fetch.git
+   git clone https://github.com/ideafy-ai/ideafy
    ```
 2. Install NPM packages
    ```sh
@@ -104,13 +100,7 @@ You will need to have the latest npm installed
 
 ## Usage
 
-1. Create a .env file and type the following inside
-   ```sh
-   // contents of .env
-   REACT_APP_API_URL="https://api.github.com";
-   ```
-
-2. Serve the project to a development server
+1. Serve the project to a development server
     ```sh
     npm run start
     ````
@@ -118,41 +108,19 @@ You will need to have the latest npm installed
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
-<!-- Testing -->
-
-## Testing
-
-To run the test suite run this command
-  ```sh
-  npm run start
-  ````
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- Storybooks -->
-
-## Storybooks
-
-Start Storybooks
-  ```sh
-  npm run storybook
-  ````
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 <!-- ROADMAP -->
 
 ## Roadmap
 
-- [x] Add github user search
-- [x] Add repository search and filtering
+- [x] Add Idea generator
+- [x] Add upvoting system
 - [ ] Add more filtering and sorting fonctionalities
 - [ ] Add "components" document to easily copy & paste sections of the readme
 - [ ] Multi-language Support
   - [ ] French
   - [ ] German
 
-See the [open issues](https://github.com/Dopeamin/github-repositories-fetch/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/ideafy-ai/ideafy/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -177,7 +145,7 @@ Don't forget to give the project a star! Thanks again!
 
 ## Contact
 
-Project Link: [https://github.com/Dopeamin/github-repositories-fetch](https://github.com/Dopeamin/github-repositories-fetch)
+Project Link: [https://github.com/ideafy-ai/ideafy](https://github.com/ideafy-ai/ideafy)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -190,15 +158,15 @@ The exercise was a great challenge as i had to think outside of the box when it 
 <!-- MARKDOWN LINKS & IMAGES -->
 
 [contributors-shield]: https://img.shields.io/github/contributors/Dopeamin/github-repositories-fetch.svg?style=for-the-badge
-[contributors-url]: https://github.com/Dopeamin/github-repositories-fetch/graphs/contributors
+[contributors-url]: https://github.com/ideafy-ai/ideafy/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/Dopeamin/github-repositories-fetch.svg?style=for-the-badge
-[forks-url]: https://github.com/Dopeamin/github-repositories-fetch/network/members
+[forks-url]: https://github.com/ideafy-ai/ideafy/network/members
 [stars-shield]: https://img.shields.io/github/stars/Dopeamin/github-repositories-fetch.svg?style=for-the-badge
-[stars-url]: https://github.com/Dopeamin/github-repositories-fetch/stargazers
+[stars-url]: https://github.com/ideafy-ai/ideafy/stargazers
 [issues-shield]: https://img.shields.io/github/issues/Dopeamin/github-repositories-fetch.svg?style=for-the-badge
-[issues-url]: https://github.com/Dopeamin/github-repositories-fetch/issues
+[issues-url]: https://github.com/ideafy-ai/ideafy/issues
 [license-shield]: https://img.shields.io/github/license/Dopeamin/github-repositories-fetchsvg?style=for-the-badge
-[license-url]: https://github.com/Dopeamin/github-repositories-fetch/blob/master/LICENSE.txt
+[license-url]: https://github.com/ideafy-ai/ideafy/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
 [product-screenshot]: ./screenshot.png
