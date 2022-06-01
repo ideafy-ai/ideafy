@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { act, findByTestId, fireEvent, render, screen, waitFor, waitForElementToBeRemoved } from "@testing-library/react";
 import Search from "./Search";
-import SearchBar from "../components/SearchBar";
 import { MemoryRouter } from "react-router";
 import { wait } from "@testing-library/user-event/dist/utils";
 import App from "../App";
@@ -10,7 +9,6 @@ import Router from "../router";
 test("renders user search", () => {
   render(
     <MemoryRouter>
-      <SearchBar />
     </MemoryRouter>
   );
   const searchUsername = document.getElementById("username");
